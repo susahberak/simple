@@ -9,54 +9,45 @@
     <link rel="icon" href="https://sapp.pages.dev/favicon.ico" type="image/ico">
 
     <style type="text/css">
-    :root {
-    --color-heading: #333;
-    --color-heading-accent: #eee;
-    --color-text: #555;
-    --color-page: #fff;
-    --color-link: blue;
-    }
+    body {
+  color: #4e4e4e;
+  font-family: Georgia, serif; }
 
-    @media (prefers-color-scheme: dark) {
-    :root {
-    --color-heading: #eee;
-    --color-heading-accent: #555;
-    --color-text: #ccc;
-    --color-page: #26292a;
-    --color-link: orange;
-      }
-    }
+hr {
+  opacity: 0.26; }
 
-    a {
-    text-decoration: none;
-    color: var(--color-link);
-    }
+div {
+  box-sizing: border-box; }
 
-   body {
-   padding: 3rem;
-   line-height: 1.7;
-   color: var(--color-text);
-   background-color: var(--color-page)
-   }
+p {
+  font-size: 1.2em;
+  line-height: 1.6; }
 
-   .container {
-   margin: 0 auto;
-   max-width: 40rem;
-   }
+.container {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px; }
 
-   .heading {
-   margin: 0 0 1rem;
-   line-height: 2.1;
-   color: var(--color-heading);
-   }
+.row {
+  display: flex; }
+  @media screen and (max-width: 425px) {
+    .row {
+      flex-wrap: wrap; } }
 
-   .heading::after {
-   height: 5px;
-   background-color: var(--color-heading-accent);
-   width: 75px;
-   display: block;
-   content: '';
-   }
+.col {
+  width: 50%;
+  flex-direction: column; }
+  @media screen and (max-width: 425px) {
+    .col {
+      width: 100%; } }
+
+.col + .col {
+  margin-left: 2em; }
+  @media screen and (max-width: 425px) {
+    .col + .col {
+      margin-left: 0; } }
+
 </style>    
 </head>
 
